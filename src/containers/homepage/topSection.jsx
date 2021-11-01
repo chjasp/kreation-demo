@@ -9,6 +9,8 @@ import { Logo } from "../../components/logo";
 import { Marginer } from "../../components/marginer";
 import { Navbar } from "../../components/navbar";
 
+import { Link } from 'react-router-dom'
+
 const TopContainer = styled.div`
   width: 100%;
   height: 100vh;
@@ -58,7 +60,7 @@ export function TopSection(props) {
           <MotivationalText>Software Development</MotivationalText>
           <MotivationalText>From the Best in the Industry</MotivationalText>
           <Marginer direction="vertical" margin="2em" />
-          <Button>Start your Project</Button>
+          <Link to="/Profile"><Button>Go To Profile</Button></Link>
           <DownArrowContainer onClick={scrollToNextSection}>
             <DownArrow />
           </DownArrowContainer>
